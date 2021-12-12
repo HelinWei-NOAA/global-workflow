@@ -42,6 +42,8 @@
 "gfs_phys",    "hpbl",          "hpbl",          "fv3_history2d",  "all",  .false.,  "none",  2
 "gfs_phys",    "lhtfl_ave",     "lhtfl_ave",     "fv3_history2d",  "all",  .false.,  "none",  2
 "gfs_phys",    "shtfl_ave",     "shtfl_ave",     "fv3_history2d",  "all",  .false.,  "none",  2
+"gfs_phys",    "pahi",          "pahi",          "fv3_history2d",  "all",  .false.,  "none",  2
+"gfs_phys",    "pah_ave",       "pah_ave",       "fv3_history2d",  "all",  .false.,  "none",  2
 "gfs_phys",    "pwat",          "pwatclm",       "fv3_history2d",  "all",  .false.,  "none",  2
 "gfs_phys",    "soilm",         "soilm",         "fv3_history2d",  "all",  .false.,  "none",  2
 "gfs_phys",    "TCDC_aveclm",   "tcdc_aveclm",   "fv3_history2d",  "all",  .false.,  "none",  2
@@ -100,6 +102,10 @@
 "gfs_phys",    "ssrun_acc",     "ssrun_acc",     "fv3_history2d",  "all",  .false.,  "none",  2
 "gfs_phys",    "sunsd_acc",     "sunsd_acc",     "fv3_history2d",  "all",  .false.,  "none",  2
 "gfs_phys",    "watr_acc",      "watr_acc",      "fv3_history2d",  "all",  .false.,  "none",  2
+"gfs_phys",    "ecan_acc",      "ecan_acc",      "fv3_history2d",  "all",  .false.,  "none",  2
+"gfs_phys",    "etran_acc",     "etran_acc",     "fv3_history2d",  "all",  .false.,  "none",  2
+"gfs_phys",    "edir_acc",      "edir_acc",      "fv3_history2d",  "all",  .false.,  "none",  2
+"gfs_phys",    "wa_acc",        "wa_acc",        "fv3_history2d",  "all",  .false.,  "none",  2
 "gfs_phys",    "wilt",          "wilt",          "fv3_history2d",  "all",  .false.,  "none",  2
 "gfs_phys",    "vbdsf_ave",     "vbdsf_ave",     "fv3_history2d",  "all",  .false.,  "none",  2
 "gfs_phys",    "vddsf_ave",     "vddsf_ave",     "fv3_history2d",  "all",  .false.,  "none",  2
@@ -121,6 +127,7 @@
 "gfs_sfc",     "tsfc",          "tmpsfc",       "fv3_history2d",  "all",  .false.,  "none",  2
 "gfs_sfc",     "vtype",         "vtype",        "fv3_history2d",  "all",  .false.,  "none",  2
 "gfs_sfc",     "stype",         "sotyp",        "fv3_history2d",  "all",  .false.,  "none",  2
+"gfs_sfc",     "lfrac",         "lfrac",        "fv3_history2d",  "all",  .false.,  "none",  2
 "gfs_sfc",     "slmsksfc",      "land",         "fv3_history2d",  "all",  .false.,  "none",  2
 "gfs_sfc",     "vfracsfc",      "veg",          "fv3_history2d",  "all",  .false.,  "none",  2
 "gfs_sfc",     "zorlsfc",       "sfcr",         "fv3_history2d",  "all",  .false.,  "none",  2
