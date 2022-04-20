@@ -337,6 +337,7 @@ cat >> input.nml <<EOF
   iopt_btr     = ${iopt_btr:-"1"}
   iopt_run     = ${iopt_run:-"1"}
   iopt_sfc     = ${iopt_sfc:-"1"}
+  iopt_trs     = ${iopt_trs:-"2"}
   iopt_frz     = ${iopt_frz:-"1"}
   iopt_inf     = ${iopt_inf:-"1"}
   iopt_rad     = ${iopt_rad:-"1"}
