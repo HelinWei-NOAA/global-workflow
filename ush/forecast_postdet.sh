@@ -237,6 +237,10 @@ EOF
     IEMS=${IEMS:-1}
   fi
 
+# copy noahmp table data to the RUNDIR
+
+  $NLN $HOMEgfs/sorc/ufs_model.fd/FV3/ccpp/physics/physics/noahmptable.tbl $DATA/.
+
   # Files for GWD
   OROFIX_ugwd=${OROFIX_ugwd:-"${FIX_DIR}/ugwd"}
   $NLN ${OROFIX_ugwd}/ugwp_limb_tau.nc $DATA/ugwp_limb_tau.nc
@@ -352,8 +356,13 @@ EOF
   FNALBC=${FNALBC:-"${FIX_SFC}/${CASE}.snowfree_albedo.tileX.nc"}
   FNVETC=${FNVETC:-"${FIX_SFC}/${CASE}.vegetation_type.tileX.nc"}
   FNSOTC=${FNSOTC:-"${FIX_SFC}/${CASE}.soil_type.tileX.nc"}
+  FNSOCC=${FNSOCC:-"${FIX_SFC}/${CASE}.soil_color.tileX.nc"}
   FNABSC=${FNABSC:-"${FIX_SFC}/${CASE}.maximum_snow_albedo.tileX.nc"}
   FNSMCC=${FNSMCC:-"$FIX_AM/global_soilmgldas.statsgo.t${JCAP}.${LONB}.${LATB}.grb"}
+# for the time being 
+
+  FNSOTC=${FNSOTC:-"/scratch2/NCEPDEV/land/data/input_data/BNU_soil_type/frac/sfc.${CASE}/${CASE}.soil_type.tileX.nc"}
+  FNSOCC=${FNSOCC:-"/scratch2/NCEPDEV/land/data/input_data/soil_color_tiled/frac/sfc.${CASE}/${CASE}.soil_color.tileX.nc"}
 
   # If the appropriate resolution fix file is not present, use the highest resolution available (T1534)
   [[ ! -f $FNSMCC ]] && FNSMCC="$FIX_AM/global_soilmgldas.statsgo.t1534.3072.1536.grb"
