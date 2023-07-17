@@ -127,7 +127,9 @@ if [[ -d "${HOMEgfs}/sorc/ufs_utils.fd" ]]; then
   ./link_fixdirs.sh "${RUN_ENVIR}" "${machine}" 2> /dev/null
 fi
 
-
+#--copy/link NoahMp table form ccpp-physics repository
+cd "${HOMEgfs}/parm/ufs/land" || exit 1
+  ${LINK_OR_COPY} "${HOMEgfs}/sorc/ufs_model.fd/FV3/ccpp/physics/physics/noahmptable.tbl" .
 #---------------------------------------
 #--add files from external repositories
 #---------------------------------------
